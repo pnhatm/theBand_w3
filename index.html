@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/386d277951.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/Style_Css/rs.css">
+    <link rel="stylesheet" href="./Assets/Style_Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Nav">
+        <ul class="nav-title">
+            <li>Home</li>
+            <li>Band</li>
+            <li>Tour</li>
+            <li>Contact</li>
+            <li class="more-bt" >More
+                <ul class="second-nav">
+                    <li>Merchandise</li>
+                    <li>Extras</li>
+                    <li>Media</li>
+                </ul>
+                <i class="fa-solid fa-sort-down down-icon">
+
+
+
+                </i>
+            </li>
+            <li class="slct-2">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="Main">
+
+      <div class="slider">
+
+
+        <div class="container" onclick="plusDivs(-1)">
+            <img class="slider-img" src="./Assets/img/de-an-sun-b57RqS-nQ1c-unsplash.jpg">
+            <div class="slider-text">
+                <h3>Chicago 
+                    <p class="slider-p">Thank you, Chicago - A night we won't forget.
+
+                    </p></h3>
+            </div>
+        </div>
+    <!--  -->
+        <div class="container" onclick="plusDivs(-1)" >
+            <img class="slider-img" src="./Assets/img/jeremy-allouche-YStboKiFPVw-unsplash.jpg">
+            <div class="slider-text">
+                <h3>Los Angeles
+                    <p class="slider-p">We had the best time playing at Venice Beach!
+
+                    </p></h3>
+            </div>
+        </div>
+    <!--  -->
+        <div class="container" onclick="plusDivs(-1)">
+            <img class="slider-img" src="./Assets/img/simon-weisser-phS37wg8cQg-unsplash.jpg">
+            <div class="slider-text">
+                <h3> Newyork
+                    <p class="slider-p">The atmosphere in New York is lorem ipsum.
+
+                    </p>
+                </h3>
+            </div>
+        </div>
+
+      </div>
+       
+            <!-- SLIDER SCRIPT -->
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) { 
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("container");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+        </script>
+            <!-- SLIDER SCRIPT -->
+
+    </div>
+
+
+    <div id="Detail">
+        <h3 class="detail-h">THE BAND
+        </h3>
+        <p class="detail-p">We love music
+
+        </p>
+        <div class="detail-m">
+            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        
+        <ul class="detail-band">
+            <li class="item">
+                <div class="member-name">Name</div>
+                <img class="member-img" src="./Assets/img/bandmember.jpg">
+            </li>
+            <li class="item">
+                <div class="member-name">Name</div>
+                <img class="member-img" src="./Assets/img/bandmember.jpg">
+            </li>
+            <li class="item">
+                <div class="member-name">Name</div>
+                <img class="member-img" src="./Assets/img/bandmember.jpg">
+            </li>
+        </ul>
+    </div>
+
+
+<div id="bgc-tour">
+    <div id="Tour">
+        <h3 class="tour-h">TOUR DATES
+        </h3>
+        <p class="tour-p">Remember to book your tickets!
+        </p>
+       
+
+        <ul class="tour-ticket">
+            <li class="ticket-item">
+                <div class="item-title">September</div>
+                <div class="item-bt1">Sold out</div>
+            </li>
+            <li class="ticket-item">
+                <div class="item-title">October</div>
+                <div class="item-bt1">Sold out</div>
+            </li>
+            <li class="ticket-item2">
+                <div class="item-title">November</div>
+                <div class="item-bt2">3</div>
+            </li>
+        </ul>
+
+       
+        <div class="tour-buy">
+            <div class="box">
+                <img src="./Assets/img/newyork.jpg" class="img" alt="">
+                <div class="content">
+                    <h4 class="heading">New York</h4>
+                    <p class="day">Fri 27 Nov 2016</p>
+                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="bt-3">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Assets/img/paris.jpg" class="img" alt="">
+                <div class="content">
+                    <h4 class="heading">Paris</h4>
+                    <p class="day">Sat 28 Nov 2016</p> 
+                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="bt-3">Buy Tickets</button>
+                </div>
+            </div>  
+            <div class="box">
+                <img src="./Assets/img/sanfran.jpg" class="img" alt="">
+                <div class="content">
+                    <h4 class="heading">San Francisco</h4>
+                    <p class="day">Sun 29 Nov 2016</p> 
+                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="bt-3">Buy Tickets</button>
+                </div>  
+            </div> 
+        </div>
+    </div>
+</div>
+    
+<div id="Detail">
+    <h3 class="detail-h">CONTACT</h3>
+    <p class="detail-p">Fan? Drop a note!</p>
+    <div id="Contact">
+        <div class="more">
+            <div> 
+                <i class="fa-solid icon fa-location-dot"></i>
+                Chicago, US
+            </div>
+            <div> 
+                <i class="fa-solid icon fa-phone"></i>
+                Phone: +00 151515
+            </div>
+            <div> 
+                <i class="fa-solid icon fa-envelope"></i>
+                Email: mail@mail.com
+            </div>
+        </div>
+        
+        <div class="input-box">
+            <div class="detail">
+                <input type="text" placeholder="Name" class="name">
+                <input type="text" placeholder="Mail"  class="mail">
+            </div>
+            <input type="text" placeholder="Message" class="message">
+        </div>
+    </div>
+</div>
+
+
+<div id="Map">
+    <img src="./Assets/img/map.jpg" class="img" alt="">
+</div>
+
+<div id="Icon">
+    <i class="fa-brands fa-facebook-square icon "></i>
+    <i class="fa-brands fa-instagram-square icon "></i>
+    <i class="fa-brands fa-snapchat-square icon "></i>
+    <i class="fa-brands fa-pinterest-p icon "></i>
+    <i class="fa-brands fa-twitter icon "></i>
+    <i class="fa-brands fa-linkedin-in icon "></i>
+</div>
+<div id="Des">Powered by Pham Minh Nhat</div>
+</body>
+</html>
